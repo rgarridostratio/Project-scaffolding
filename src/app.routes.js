@@ -8,6 +8,6 @@
    AppRoutes.$inject = ['$urlRouterProvider'];
 
    function AppRoutes($urlRouterProvider) {
-      $urlRouterProvider.otherwise('/dashboard');
+      $urlRouterProvider.otherwise('/wizard/deployment_settings');
    }
 })();

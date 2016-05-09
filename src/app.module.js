@@ -4,6 +4,7 @@
    angular.module('app', [
       'app.core',
       'app.mock',
-      'app.dashboard'
+      'app.dashboard',
+      'app.wizard'
    ]);
 })();
