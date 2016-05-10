@@ -1,12 +1,14 @@
 <form>
-  <div>Master IP Address List: <input type="text" name="user"></div>
+  <div>Tag: <input type="text" name="user"></div>
   <div class="st-divider"></div>
-  <div>Agent IP Address List: <input type="text" name="user"></div>
+  <div>Provider:
+    <select ng-model="ctrl.provider">
+      <option value="amazon">Amazon</option>
+      <option value="openstack">OpenStack</option>
+      <option value="onpremise">On Premise</option>
+    </select>
+  </div>
   <div class="st-divider"></div>
-  <div>SSH Username: <input type="text" name="user"></div>
-  <div class="st-divider"></div>
-  <div>SSH Port: <input type="text" name="user"></div>
-  <div class="st-divider"></div>
-  <div>SSH Key: <input type="text" name="user"></div>
-  <div class="st-divider"></div>
+  <st-button icon="icon-circle-cross">Cancel</st-button>
+	<st-button icon="icon-arrow-right" icon-right ng-click="ctrl.onNext()">Next</st-button>
 </form>

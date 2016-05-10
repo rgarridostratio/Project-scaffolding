@@ -1,12 +1,12 @@
 (function() {
    'use strict';
 
-   class WizardController {
+   class AmazonSetupCtrl {
       constructor() {
       }
    }
 
    angular
       .module('app.wizard')
-      .controller('WizardController', WizardController);
+      .controller('AmazonSetupCtrl', AmazonSetupCtrl);
 })();

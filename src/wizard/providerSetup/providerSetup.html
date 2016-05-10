@@ -1,0 +1,34 @@
+<form>
+  <div>Storage: <input type="text" name="storage"></div>
+  <div class="st-divider"></div>
+  <div>Flavours: 
+    <select>
+      <option value="xs">XS</option>
+      <option value="2xl">2XL</option>
+      <option value="4xl">4XL</option>
+    </select>
+  </div>
+  <div class="st-divider"></div>
+  <div>Type:  
+    <select>
+      <option value="master">Master</option>
+      <option value="slave">Slave</option>
+    </select>
+  </div>
+  <div class="st-divider"></div>
+  <div>OS: 
+    <select>
+      <option value="ubuntu">Ubuntu</option>
+      <option value="centos">CentOS</option>
+    </select>
+  </div>
+  <div class="st-divider"></div>
+  <div>Location: <input type="text" name="location"></div>
+  
+  <div class="st-divider"></div>
+  
+  <div ui-view></div>
+  
+  <st-button icon="icon-arrow-left" icon-left ng-click="ctrl.onBack()">Back</st-button>
+	<st-button icon="icon-arrow-right" icon-right >Next</st-button>
+</form>

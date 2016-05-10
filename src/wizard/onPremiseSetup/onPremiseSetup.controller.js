@@ -1,12 +1,12 @@
 (function() {
    'use strict';
 
-   class WizardController {
+   class OnPremiseSetupCtrl {
       constructor() {
       }
    }
 
    angular
       .module('app.wizard')
-      .controller('WizardController', WizardController);
+      .controller('OnPremiseSetupCtrl', OnPremiseSetupCtrl);
 })();

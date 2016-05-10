@@ -11,34 +11,36 @@
       $stateProvider
          .state('wizard', {
             url: '/wizard',
+            abstract: true,
             controller: 'WizardController',
-            controllerAs: 'vm',
+            controllerAs: 'ctrl',
             templateUrl: 'wizard/wizard.html'
          }).state('wizard.deploymentSettings', {
             url:          '/deployment_settings',
             controller:   'DeploymentSettingsCtrl',
-            controllerAs: 'vm',
+            controllerAs: 'ctrl',
             templateUrl:  'wizard/deploymentSettings/deploymentSettings.html'
-         }).state('wizard.amazonSetup', {
+         }).state('wizard.provider', {
+            url:          '/provider',
+            abstract: true,
+            controller:   'ProviderSetupCtrl',
+            controllerAs: 'ctrl',
+            templateUrl:  'wizard/providerSetup/providerSetup.html'
+         }).state('wizard.provider.amazon', {
             url:          '/amazon_setup',
             controller:   'AmazonSetupCtrl',
-            controllerAs: 'vm',
+            controllerAs: 'ctrl',
             templateUrl:  'wizard/amazonSetup/amazonSetup.html'
-         }).state('wizard.openStackSetup', {
+         }).state('wizard.provider.openStack', {
             url:          '/openstack_setup',
-            controller:   'WizardOpenStackConfigCtrl',
-            controllerAs: 'vm',
-            templateUrl:  'wizard/openstack_setup/openstackSetup.html'
-         }).state('wizard.onPremiseSetup', {
+            controller:   'OpenStackSetupCtrl',
+            controllerAs: 'ctrl',
+            templateUrl:  'wizard/openStackSetup/openStackSetup.html'
+         }).state('wizard.provider.onPremise', {
             url:          '/on_premise_setup',
             controller:   'OnPremiseSetupCtrl',
-            controllerAs: 'vm',
-            templateUrl:  'wizard/on_premise_setup/on_premiseSetup.html'
-         }).state('wizard.servicesSetup', {
-            url:          '/services_setup',
-            controller:   'ServicesSetupCtrl',
-            controllerAs: 'vm',
-            templateUrl:  'wizard/services_setup/servicesSetup.html'
+            controllerAs: 'ctrl',
+            templateUrl:  'wizard/onPremiseSetup/onPremiseSetup.html'
          });
    }
 })();
