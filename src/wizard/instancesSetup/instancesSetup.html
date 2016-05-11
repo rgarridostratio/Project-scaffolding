@@ -1,0 +1,15 @@
+<div>INSTANCES SETUP</div>
+<div class="st-divider"></div>
+
+<div>Node Type:
+   <select ng-model="ctrl.nodetype">
+      <option value="master">Master</option>
+      <option value="slave">Slave</option>
+      <option value="management">Management</option>
+   </select>
+</div>
+<div class="st-divider"></div>
+<div>Number of instances: <input type="number" name="user"></div>
+<div class="st-divider"></div>
+<st-button icon="icon-circle-cross" icon-left ng-click="ctrl.onBack()">Cancel</st-button>
+<st-button icon="icon-play" icon-left>Install</st-button>

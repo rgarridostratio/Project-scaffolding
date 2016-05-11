@@ -41,6 +41,11 @@
             controller:   'OnPremiseSetupCtrl',
             controllerAs: 'ctrl',
             templateUrl:  'wizard/onPremiseSetup/onPremiseSetup.html'
+         }).state('wizard.instancesSetup', {
+            url:          '/instances_setup',
+            controller:   'InstancesSetupCtrl',
+            controllerAs: 'ctrl',
+            templateUrl:  'wizard/instancesSetup/instancesSetup.html'
          });
    }
 })();

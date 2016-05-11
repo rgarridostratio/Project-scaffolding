@@ -1,4 +1,7 @@
 <form>
+  
+  <div ui-view></div>
+  
   <div>Storage: <input type="text" name="storage"></div>
   <div class="st-divider"></div>
   <div>Flavours: 
@@ -24,11 +27,13 @@
   </div>
   <div class="st-divider"></div>
   <div>Location: <input type="text" name="location"></div>
+  <div class="st-divider"></div>
+  <div>Hostname: <input type="text" name="hostname"></div>
+  <div class="st-divider"></div>
+  <div>Tag: <input type="text" name="tag"></div>
   
   <div class="st-divider"></div>
-  
-  <div ui-view></div>
-  
+
   <st-button icon="icon-arrow-left" icon-left ng-click="ctrl.onBack()">Back</st-button>
-	<st-button icon="icon-arrow-right" icon-right >Next</st-button>
+	<st-button icon="icon-arrow-right" icon-right ng-click="ctrl.onNext()">Next</st-button>
 </form>

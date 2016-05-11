@@ -1,7 +1,7 @@
 (function() {
    'use strict';
 
-   class ProviderSetupCtrl {
+   class InstancesSetupCtrl {
       constructor($state) {
          this._$state = $state;
       }
@@ -15,9 +15,9 @@
       }
    }
 
-   ProviderSetupCtrl.$inject = ['$state'];
+   InstancesSetupCtrl.$inject = ['$state'];
 
    angular
       .module('app.wizard')
-      .controller('ProviderSetupCtrl', ProviderSetupCtrl);
+      .controller('InstancesSetupCtrl', InstancesSetupCtrl);
 })();
